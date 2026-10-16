@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rey Joseph Guarino — Full-Stack Developer & Designer</title>
+  <meta name="description"
+    content="Portfolio of Rey Joseph Guarino — Full-Stack Developer crafting reliable, scalable digital products and modern web experiences.">
+
+  <!-- Favicon -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Background Glow & Grid Canvas -->
+  <div class="bg-noise"></div>
+  <div class="bg-ambient-glow glow-1"></div>
+  <div class="bg-ambient-glow glow-2"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo" aria-label="Rey Joseph Guarino Home">
+        <span class="logo-mark">R</span>
+        <span class="logo-text">Rey Joseph Guarino</span>
+        <span class="status-indicator" title="Available for new opportunities">
+          <span class="status-dot"></span>
+          <span class="status-label">Available</span>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#work" class="nav-link"><span class="nav-index">01</span> Work</a></li>
+          <li><a href="#about" class="nav-link"><span class="nav-index">02</span> About</a></li>
+          <li><a href="#skills" class="nav-link"><span class="nav-index">03</span> Skills</a></li>
+          <li><a href="#credentials" class="nav-link"><span class="nav-index">04</span> Certs</a></li>
+          <li><a href="#contact" class="nav-link"><span class="nav-index">05</span> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-sm btn-outline">Let's Talk</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer-content">
+      <ul class="mobile-nav-links">
+        <li><a href="#work" class="mobile-nav-link"><span>01</span> Selected Work</a></li>
+        <li><a href="#about" class="mobile-nav-link"><span>02</span> About & Philosophy</a></li>
+        <li><a href="#skills" class="mobile-nav-link"><span>03</span> Skills & Stack</a></li>
+        <li><a href="#credentials" class="mobile-nav-link"><span>04</span> Certifications</a></li>
+        <li><a href="#contact" class="mobile-nav-link"><span>05</span> Get in Touch</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <p class="drawer-contact-label">Get in touch directly:</p>
+        <a href="mailto:hello@reyjosephguarino.dev" class="drawer-email">hello@reyjosephguarino.dev</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-header-badge">
+          <span class="badge-tag">00 // FULL-STACK DEVELOPER</span>
+          <span class="badge-separator">•</span>
+          <span class="badge-location">Manila, PH / Remote</span>
+        </div>
+
+        <h1 class="hero-headline">
+          I build digital products <br class="hero-br">
+          <span class="gradient-text">from front to back.</span>
+        </h1>
+
+        <p class="hero-description">
+          I design and develop accessible, reliable web experiences—from polished, intuitive user interfaces to
+          scalable, high-performance APIs and robust databases.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#work" class="btn btn-primary">
+            <span>View selected work</span>
+            <svg class="icon-arrow-down" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Contact me</span>
+            <svg class="icon-arrow-right" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Quick Stats Banner -->
+        <div class="hero-stats-banner">
+          <div class="stat-item">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">99.9%</span>
+            <span class="stat-label">Code Reliability</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Client Satisfaction</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Work Section -->
+    <section class="section work-section" id="work">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-number">01</span>
+            <h2 class="section-title">Selected Work</h2>
+          </div>
+          <p class="section-meta">2023 — 2025 ARCHIVE</p>
+        </div>
+
+        <!-- Project 01 (Featured Showcase) -->
+        <article class="featured-project-card card-glow" data-project="1">
+          <div class="project-media-wrap">
+            <img src="assets/images/project-1.png" alt="Salon Appointment System" class="project-img" loading="lazy">
+            <div class="project-overlay">
+              <button class="btn btn-sm btn-glass view-case-study-btn" data-project-id="1">View Case Study</button>
+            </div>
+            <span class="featured-pill">Featured Showcase</span>
+          </div>
+          <div class="project-content">
+            <div class="project-meta-top">
+              <div class="project-tags">
+                <span class="tag">Strategy</span>
+                <span class="tag">Design System</span>
+                <span class="tag">Full-Stack</span>
+              </div>
+              <span class="project-year">2025</span>
+            </div>
+
+            <h3 class="project-title">Salon Appointment System</h3>
+
+            <p class="project-description">
+              A comprehensive and user-friendly salon appointment scheduling system, designed to streamline bookings,
+              manage client information, and optimize salon operations through a modern, intuitive interface.
+            </p>
+
+            <div class="tech-stack-pills">
+              <span class="tech-pill">Next.js 14</span>
+              <span class="tech-pill">TypeScript</span>
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">PostgreSQL</span>
+              <span class="tech-pill">Tailwind CSS</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn-link view-case-study-btn" data-project-id="1">
+                <span>View case study</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+              <a href="#" class="icon-link" aria-label="Phoenix GitHub Repository"
+                onclick="event.preventDefault(); alert('Demo repository placeholder.');">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project Grid (Projects 02, 03, 04) -->
+        <div class="projects-grid">
+          <!-- Project 02 -->
+          <article class="project-grid-card card-glow" data-project="2">
+            <div class="grid-card-media">
+              <img src="assets/images/project-2.png" alt="Vaccine Tracking System Interface" class="project-img"
+                loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-glass view-case-study-btn" data-project-id="2">Quick Preview</button>
+              </div>
+            </div>
+            <div class="grid-card-content">
+              <div class="project-meta-top">
+                <div class="project-tags">
+                  <span class="tag">Healthcare</span>
+                  <span class="tag">Records</span>
+                </div>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 class="grid-project-title">VacTrack — Vaccine Tracking System</h3>
+              <p class="grid-project-desc">
+                A robust clinic and immunization tracking system designed to streamline patient records, monitor vaccine
+                batch inventories, manage dosage schedules, and generate public health compliance reports.
+              </p>
+              <div class="tech-stack-pills">
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">REST APIs</span>
+                <span class="tech-pill">MySQL</span>
+              </div>
+              <button class="btn-link view-case-study-btn" data-project-id="2">
+                <span>View case study</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 03 -->
+          <article class="project-grid-card card-glow" data-project="3">
+            <div class="grid-card-media">
+              <img src="assets/images/project-3.png" alt="InventoryHub Stock and Order Management Dashboard"
+                class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-glass view-case-study-btn" data-project-id="3">Quick Preview</button>
+              </div>
+            </div>
+            <div class="grid-card-content">
+              <div class="project-meta-top">
+                <div class="project-tags">
+                  <span class="tag">Inventory</span>
+                  <span class="tag">E-Commerce</span>
+                </div>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 class="grid-project-title">InventoryHub — Stock & Order System</h3>
+              <p class="grid-project-desc">
+                A centralized inventory and warehouse dashboard providing real-time stock level monitoring, automated
+                low-inventory alerts, purchase order workflows, and supplier management.
+              </p>
+              <div class="tech-stack-pills">
+                <span class="tech-pill">Next.js</span>
+                <span class="tech-pill">TypeScript</span>
+                <span class="tech-pill">PostgreSQL</span>
+                <span class="tech-pill">Tailwind CSS</span>
+              </div>
+              <button class="btn-link view-case-study-btn" data-project-id="3">
+                <span>View case study</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 04 -->
+          <article class="project-grid-card card-glow" data-project="4">
+            <div class="grid-card-media">
+              <img src="assets/images/project-4.png" alt="StaffPulse Employee Attendance and HR Dashboard"
+                class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-glass view-case-study-btn" data-project-id="4">Quick Preview</button>
+              </div>
+            </div>
+            <div class="grid-card-content">
+              <div class="project-meta-top">
+                <div class="project-tags">
+                  <span class="tag">HR Tech</span>
+                  <span class="tag">Enterprise</span>
+                </div>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 class="grid-project-title">StaffPulse — Attendance & HR System</h3>
+              <p class="grid-project-desc">
+                A modern workforce attendance and human resource dashboard featuring real-time check-in/out tracking,
+                automated timesheet calculation, leave request approvals, and shift scheduling.
+              </p>
+              <div class="tech-stack-pills">
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Express</span>
+                <span class="tech-pill">MongoDB</span>
+              </div>
+              <button class="btn-link view-case-study-btn" data-project-id="4">
+                <span>View case study</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-number">02</span>
+            <h2 class="section-title">How I Work</h2>
+          </div>
+          <p class="section-meta">ABOUT & PHILOSOPHY</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Profile Card -->
+          <div class="about-profile-card card-glow">
+            <div class="profile-avatar-wrap">
+              <img src="assets/images/download-removebg-preview.png" alt="Rey Joseph Guarino Portrait"
+                class="profile-avatar">
+              <div class="avatar-badge">
+                <span class="status-dot"></span>
+                <span>Ready to deploy</span>
+              </div>
+            </div>
+
+            <div class="profile-details">
+              <h3 class="profile-name">Rey Joseph Guarino</h3>
+              <p class="profile-role">Full-Stack Software Developer</p>
+
+              <div class="profile-meta-list">
+                <div class="meta-row">
+                  <span class="meta-label">Location:</span>
+                  <span class="meta-value">Manila, Philippines (GMT+8)</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-label">Availability:</span>
+                  <span class="meta-value text-accent">Worldwide / Remote Contract</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-label">Focus:</span>
+                  <span class="meta-value">Web Applications, APIs & UI Systems</span>
+                </div>
+              </div>
+
+              <div class="profile-action">
+                <a href="#contact" class="btn btn-outline btn-full">Schedule a Conversation</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Narrative & Capabilities -->
+          <div class="about-narrative-wrap">
+            <div class="about-lead">
+              <p class="lead-text">
+                "I bridge the gap between human-centered design and reliable full-stack engineering, crafting web apps
+                that are as resilient under the hood as they are elegant on the surface."
+              </p>
+            </div>
+
+            <div class="about-body">
+              <p>
+                As a developer, I believe great software isn't just about writing code that compiles—it's about
+                understanding real-world constraints, prioritizing user flow, and architecting systems that scale
+                gracefully as user demands expand.
+              </p>
+              <p>
+                From architecting database models and crafting RESTful microservices to designing responsive,
+                accessibility-first interfaces, I take pride in owning features end-to-end with high attention to
+                performance and code maintainability.
+              </p>
+            </div>
+
+            <!-- Core Pillars -->
+            <div class="principles-grid">
+              <div class="principle-card">
+                <span class="principle-num">01</span>
+                <h4>Clean Architecture</h4>
+                <p>Modular, maintainable code structures with clear separations of concerns and type-safety.</p>
+              </div>
+              <div class="principle-card">
+                <span class="principle-num">02</span>
+                <h4>Performance First</h4>
+                <p>Optimized asset delivery, minimal bundle weights, and instant feedback loops.</p>
+              </div>
+              <div class="principle-card">
+                <span class="principle-num">03</span>
+                <h4>Pixel Precision</h4>
+                <p>Fluid micro-interactions, responsive grids, and thoughtful accessible typography.</p>
+              </div>
+            </div>
+
+            <!-- Two-column Capabilities -->
+            <div class="capabilities-box">
+              <div class="cap-col">
+                <span class="cap-heading">Core Capabilities</span>
+                <ul class="cap-list">
+                  <li>Full-Stack Web Engineering</li>
+                  <li>RESTful & GraphQL API Design</li>
+                  <li>Relational Database Modeling</li>
+                  <li>Responsive Design Systems</li>
+                </ul>
+              </div>
+              <div class="cap-col">
+                <span class="cap-heading">Work Principles</span>
+                <ul class="cap-list">
+                  <li>Iterative Agile Delivery</li>
+                  <li>Thorough Unit & E2E Testing</li>
+                  <li>Zero-Downtime Deployment</li>
+                  <li>Clear Documentation & Communication</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Stack Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-number">03</span>
+            <h2 class="section-title">What I Work With</h2>
+          </div>
+          <p class="section-meta">STACK & TECHNOLOGIES</p>
+        </div>
+
+        <div class="skills-categories-grid">
+          <!-- Category 1: Frontend -->
+          <div class="skill-category-card card-glow">
+            <div class="cat-header">
+              <span class="cat-index">01 / FRONTEND</span>
+              <h3 class="cat-title">Interface & Client-Side</h3>
+            </div>
+            <p class="cat-desc">Building responsive, modern user interfaces with clean styling and component
+              architecture.</p>
+            <div class="skill-tags-group">
+              <span class="skill-badge highlight">HTML5</span>
+              <span class="skill-badge highlight">CSS3</span>
+              <span class="skill-badge highlight">JavaScript</span>
+              <span class="skill-badge highlight">TypeScript</span>
+              <span class="skill-badge">React</span>
+              <span class="skill-badge">Next.js</span>
+              <span class="skill-badge">Tailwind CSS</span>
+              <span class="skill-badge">Bootstrap</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Backend -->
+          <div class="skill-category-card card-glow">
+            <div class="cat-header">
+              <span class="cat-index">02 / BACKEND & DATA</span>
+              <h3 class="cat-title">Servers & Systems</h3>
+            </div>
+            <p class="cat-desc">Developing server-side logic, secure RESTful APIs, and efficient database architectures.
+            </p>
+            <div class="skill-tags-group">
+              <span class="skill-badge highlight">Node.js</span>
+              <span class="skill-badge highlight">Express.js</span>
+              <span class="skill-badge highlight">MySQL</span>
+              <span class="skill-badge highlight">PostgreSQL</span>
+              <span class="skill-badge">PHP</span>
+              <span class="skill-badge">MongoDB</span>
+              <span class="skill-badge">REST APIs</span>
+              <span class="skill-badge">JWT / Auth</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Tools & Workflow -->
+          <div class="skill-category-card card-glow">
+            <div class="cat-header">
+              <span class="cat-index">03 / TOOLS & INFRA</span>
+              <h3 class="cat-title">Workflow & Operations</h3>
+            </div>
+            <p class="cat-desc">Utilizing essential developer tools for version control, testing, design, and
+              deployment.</p>
+            <div class="skill-tags-group">
+              <span class="skill-badge highlight">Git & GitHub</span>
+              <span class="skill-badge highlight">VS Code</span>
+              <span class="skill-badge highlight">Postman</span>
+              <span class="skill-badge highlight">Figma</span>
+              <span class="skill-badge">Docker</span>
+              <span class="skill-badge">Vercel</span>
+              <span class="skill-badge">Vite / NPM</span>
+              <span class="skill-badge">Linux Basics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Credentials / Certifications Section -->
+    <section class="section credentials-section" id="credentials">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-number">04</span>
+            <h2 class="section-title">Credentials & Certs</h2>
+          </div>
+          <p class="section-meta">VERIFIED EXPERTISE</p>
+        </div>
+
+        <div class="credentials-table card-glow">
+          <div class="cred-row header-row">
+            <div class="cred-col name">Certification / Credential</div>
+            <div class="cred-col org">Issuing Body</div>
+            <div class="cred-col date">Year</div>
+            <div class="cred-col status">Status</div>
+          </div>
+
+          <a href="https://arcx.io/verify-certificate?id=6ba9a6d2f0f66293fc05f5ddb1a0ad765520f015&k=36bbc38b4f50409c919b026ace7c77f2"
+            class="cred-row" target="_blank" rel="noopener noreferrer"
+            title="Verify Foundation Level Threat intelligence Analyst on ARCX">
+            <div class="cred-col name">
+              <span class="cred-icon">📜</span>
+              <div>
+                <strong>
+                  Foundation Level Threat intelligence Analyst
+                  <svg class="cred-external-icon" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </strong>
+                <span class="cred-sub">Threat Intelligence Lifecycle & Tactical Analysis</span>
+              </div>
+            </div>
+            <div class="cred-col org">ARCX</div>
+            <div class="cred-col date">2025</div>
+            <div class="cred-col status">
+              <span class="badge-verified">
+                Verified
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </span>
+            </div>
+          </a>
+
+          <a href="https://www.credly.com/badges/da699d5b-4990-4ecf-bf8a-bad5bec59a82/public_url" class="cred-row"
+            target="_blank" rel="noopener noreferrer"
+            title="Verify Cybersecurity Fundamentals on Credly / IBM SkillsBuild">
+            <div class="cred-col name">
+              <span class="cred-icon">📜</span>
+              <div>
+                <strong>
+                  Cybersecurity Fundamentals
+                  <svg class="cred-external-icon" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </strong>
+                <span class="cred-sub">Security Principles & Cyber Attacks</span>
+              </div>
+            </div>
+            <div class="cred-col org">IBM SkillsBuild</div>
+            <div class="cred-col date">2025</div>
+            <div class="cred-col status">
+              <span class="badge-verified">
+                Verified
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </span>
+            </div>
+          </a>
+
+          <a href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiI0MTk1IiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvOTQyOTI0Ml85NzIwODQ4MTc2MzcxOTcxMjU0Ni5wbmciLCJ1c2VybmFtZSI6IlJleSBKb3NlcGggR3VhcmlubyJ9&referrer=https%3A%2F%2Fcertificates.simplicdn.net%2Fshare%2F9429242_97208481763719712546.png"
+            class="cred-row" target="_blank" rel="noopener noreferrer"
+            title="Verify Modernize Infrastructure and Applications with Google Cloud on Simplilearn">
+            <div class="cred-col name">
+              <span class="cred-icon">📜</span>
+              <div>
+                <strong>
+                  Modernize Infrastructure and Applications with Google Cloud
+                  <svg class="cred-external-icon" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </strong>
+                <span class="cred-sub">Kubernetes, Compute Engine, & Cloud Migration</span>
+              </div>
+            </div>
+            <div class="cred-col org">Simplilearn</div>
+            <div class="cred-col date">2025</div>
+            <div class="cred-col status">
+              <span class="badge-verified">
+                Verified
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </span>
+            </div>
+          </a>
+
+          <a href="https://app.cybrary.it/courses/api/certificate/CC-de387e0b-9b8a-4323-b298-7d7e5e6327d6/view"
+            class="cred-row" target="_blank" rel="noopener noreferrer"
+            title="Verify Ethical Hacking: Network and Perimeter Hacking on Cybrary">
+            <div class="cred-col name">
+              <span class="cred-icon">📜</span>
+              <div>
+                <strong>
+                  Ethical Hacking: Network and Perimeter Hacking
+                  <svg class="cred-external-icon" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </strong>
+                <span class="cred-sub">Reconnaissance, Scanning, & Vulnerability Assessment</span>
+              </div>
+            </div>
+            <div class="cred-col org">Cybrary</div>
+            <div class="cred-col date">2025</div>
+            <div class="cred-col status">
+              <span class="badge-verified">
+                Verified
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-number">05</span>
+            <h2 class="section-title">Get In Touch</h2>
+          </div>
+          <p class="section-meta">START A COLLABORATION</p>
+        </div>
+
+        <div class="contact-card-wrapper card-glow">
+          <div class="contact-info-col">
+            <span class="contact-badge">READY FOR NEW CHALLENGES</span>
+            <h3 class="contact-headline">Have a project in mind?<br><span class="gradient-text">Let's build something
+                exceptional.</span></h3>
+            <p class="contact-subtext">
+              Whether you have a product to build, an architectural challenge to solve, or are looking to expand your
+              engineering team, my inbox is always open.
+            </p>
+
+            <div class="contact-direct-card">
+              <span class="direct-label">Direct Email</span>
+              <div class="direct-email-row">
+                <span class="email-address" id="email-text">reyjosephguarino@gmail.com</span>
+                <button class="btn btn-sm btn-glass copy-email-btn" id="copy-email-btn"
+                  aria-label="Copy email address to clipboard">
+                  <svg class="copy-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span id="copy-btn-text">Copy</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="socials-group">
+              <span class="socials-label">Connect on the web:</span>
+              <div class="social-links">
+                <a href="https://github.com/josephguarino27" target="_blank" rel="noopener noreferrer"
+                  class="social-btn" title="GitHub">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/rey-joseph-guarino-45106b35b" target="_blank"
+                  rel="noopener noreferrer" class="social-btn" title="LinkedIn">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://www.facebook.com/sxph.xx04/" target="_blank" rel="noopener noreferrer"
+                  class="social-btn" title="Facebook">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                  </svg>
+                  <span>Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/seph.arkive/" target="_blank" rel="noopener noreferrer"
+                  class="social-btn" title="Instagram">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                  </svg>
+                  <span>Instagram</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-col">
+            <form class="contact-form" id="contact-form"
+              onsubmit="event.preventDefault(); window.handleContactSubmit(event);">
+              <div class="form-group">
+                <label for="form-name">Your Name</label>
+                <input type="text" id="form-name" name="name" placeholder="Alex Morgan" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email">Your Email</label>
+                <input type="email" id="form-email" name="email" placeholder="alex@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-project">Project Type</label>
+                <select id="form-project" name="project_type">
+                  <option value="fullstack">Full-Stack Web Application</option>
+                  <option value="frontend">Frontend / UI System</option>
+                  <option value="backend">Backend & API Integration</option>
+                  <option value="consulting">Consulting / Technical Advisory</option>
+                  <option value="other">Other Inquiry</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <textarea id="form-message" name="message" rows="4"
+                  placeholder="Tell me about your project goals, timeline, and scope..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full submit-btn">
+                <span>Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="footer-brand">Rey Joseph Guarino</a>
+        <p class="footer-copy">© 2025 Rey Joseph Guarino. Crafted with modern web standards.</p>
+      </div>
+
+      <div class="footer-center">
+        <div class="local-time-badge">
+          <span class="clock-icon">🕒</span>
+          <span id="local-time">Manila, PH: --:--:-- GMT+8</span>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Back to top of page">
+          <span>Back to top</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast-notification" role="status" aria-live="polite">
+    <svg class="toast-check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2.5">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span class="toast-msg" id="toast-msg">Email copied to clipboard!</span>
+  </div>
+
+  <!-- Interactive Case Study Modal -->
+  <div class="modal-backdrop" id="case-study-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close case study modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal-body" id="modal-body-content">
+        <!-- Content injected dynamically via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
